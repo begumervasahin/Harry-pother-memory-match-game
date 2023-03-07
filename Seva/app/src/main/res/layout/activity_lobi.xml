@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/son"
+    tools:context=".Lobi">
+
+
+    <ImageView
+        android:id="@+id/btncal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="312dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="90dp"
+        android:onClick="calCliked"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/btndurdur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baslat" />
+
+    <ImageView
+        android:id="@+id/btndurdur"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="90dp"
+        android:onClick="durdurClickes"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btncal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/durdur" />
+
+
+    <Button
+        android:id="@+id/beginner2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="beginner2Clicked"
+        android:text="seviye-1"
+        app:layout_constraintBottom_toTopOf="@+id/intermediate2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/beginner"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/intermediate2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="intermediate2Clicked"
+        android:text=" seviye-2"
+        app:layout_constraintBottom_toTopOf="@+id/hard2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/intermediate"
+        app:layout_constraintTop_toBottomOf="@+id/beginner2" />
+
+    <Button
+        android:id="@+id/hard2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="172dp"
+        android:onClick="hard2Clicked"
+        android:text="seviye-3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hard"
+        app:layout_constraintTop_toBottomOf="@+id/intermediate2" />
+
+    <Button
+        android:id="@+id/beginner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="27dp"
+        android:onClick="beginnerClicked"
+        android:text="seviye-1"
+        app:layout_constraintBottom_toTopOf="@+id/intermediate"
+        app:layout_constraintEnd_toStartOf="@+id/beginner2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/intermediate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="28dp"
+        android:onClick="intermediateClicked"
+        android:text=" seviye-2"
+        app:layout_constraintBottom_toTopOf="@+id/hard"
+        app:layout_constraintEnd_toStartOf="@+id/intermediate2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/beginner" />
+
+    <Button
+        android:id="@+id/hard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="170dp"
+        android:onClick="hardClicked"
+        android:text="seviye-3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/hard2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/intermediate" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="81dp"
+        android:background="#A1B2C8"
+        android:fontFamily="@font/yeseva_one"
+        android:includeFontPadding="true"
+        android:text="TEK OYUNCU"
+        android:textColor="#1F0C3A"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/beginner"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="81dp"
+        android:background="#A1B2C8"
+        android:fontFamily="@font/yeseva_one"
+        android:text="ÇİFT OYUNCU"
+        android:textColor="#1F0C3A"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/beginner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/btncal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/son"
+    tools:context=".ciftKolay">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:padding="10dp">
+
+
+            -
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/boton00"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_column="0"
+                    android:scaleType="centerInside"></ImageButton>
+
+                <ImageButton
+                    android:id="@+id/boton01"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_column="1"></ImageButton>
+
+
+            </TableRow>
+
+
+            -
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/boton02"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_column="0"></ImageButton>
+
+
+                <ImageButton
+                    android:id="@+id/boton03"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_column="1"></ImageButton>
+
+
+            </TableRow>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/botonJuegoReiniciar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="yenile" />
+
+                <Button
+                    android:id="@+id/botonJuegoSalir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="çıkış" />
+
+            </LinearLayout>
+
+
+            -
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/texto_puntuacion"
+                    android:layout_width="144dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/yeseva_one"
+                    android:background="#AFBED7"
+                    android:text="oyuncu1:: "
+                    android:textColor="#1F0C3A"
+                    android:textSize="25sp"
+                    android:textStyle="bold|italic"></TextView>
+
+                <TextView
+                    android:id="@+id/texto_puntuacion2"
+                    android:layout_width="187dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/yeseva_one"
+                    android:background="#AFBED7"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:text="oyuncu2::"
+                    android:textColor="#1F0C3A"
+                    android:textSize="25dp"
+                    android:textStyle="bold|italic"></TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="235dp"
+                    android:layout_height="50dp"
+                    android:background="#AFBED7"
+                    android:gravity="center_horizontal"
+                    android:text="Süre: "
+                    android:textColor="#1F0C3A"
+                    android:fontFamily="@font/yeseva_one"
+                    android:textSize="25dp"
+                    android:textStyle="bold|italic"></TextView>
+
+                <ImageView
+                android:id="@+id/btncal"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="calCliked"
+                app:srcCompat="@drawable/baslat"
+                tools:layout_editor_absoluteX="292dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/btndurdur"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:onClick="durdurClickes"
+                app:srcCompat="@drawable/durdur"
+                tools:layout_editor_absoluteX="292dp"
+                tools:layout_editor_absoluteY="16dp" />
+            </LinearLayout>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

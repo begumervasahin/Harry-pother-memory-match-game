@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/son"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="0dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="22dp"
+        android:background="#182247"
+        android:backgroundTint="#AFBED7"
+        android:ems="10"
+        android:hint="e -mail"
+        android:inputType="textPersonName"
+        android:textColor="#00021F"
+        app:layout_constraintBottom_toTopOf="@+id/passwordText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginEnd="62dp"
+        android:background="#182247"
+        android:backgroundTint="#AFBED7"
+        android:backgroundTintMode="src_atop"
+        android:ems="10"
+        android:hint="password"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="0dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="82dp"
+        android:background="#182B51"
+        android:backgroundTint="#AFBED7"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        android:shadowColor="#EDE9E9"
+        android:textColor="#00021F"
+        android:textColorHighlight="#630303"
+        app:layout_constraintBottom_toBottomOf="@+id/emailText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btncal" />
+
+    <Button
+        android:id="@+id/signinButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:onClick="signUpClicked"
+        android:text="Giriş yap"
+        android:textColorLink="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/güncelle"
+        app:layout_constraintEnd_toStartOf="@+id/güncelle" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="134dp"
+        android:onClick="signInClicked"
+        android:text="Kayıt ol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/güncelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:onClick="güncelleClicked"
+        android:text="güncelle"
+        app:layout_constraintEnd_toStartOf="@+id/signupButton"
+        app:layout_constraintTop_toBottomOf="@+id/signupButton" />
+
+    <ImageView
+        android:id="@+id/btncal"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="calCliked"
+        app:layout_constraintEnd_toStartOf="@+id/btndurdur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baslat" />
+
+    <ImageView
+        android:id="@+id/btndurdur"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="11dp"
+        android:onClick="durdurClickes"
+        app:layout_constraintBottom_toBottomOf="@+id/btncal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btncal"
+        app:layout_constraintTop_toTopOf="@+id/btncal"
+        app:srcCompat="@drawable/durdur" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
